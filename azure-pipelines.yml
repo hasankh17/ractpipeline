@@ -1,8 +1,8 @@
 
-- step:
-    name: "Build"
-    script:
-      - nvm install 12
-      - npm install
-      - npm run build
-      - cd build
+step:
+  name: "Build"
+  script:
+    - nvm install 12
+    - npm install
+    - npm run build
+    - cd build
