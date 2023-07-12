@@ -1,8 +1,7 @@
-
-step:
-  name: "Build"
-  script:
-    - nvm install 12
-    - npm install
-    - npm run build
-    - cd build
+- task: Npm@1
+  inputs:
+    command: 'install'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run build'
